@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #ab5e28;
+    --cor-secundaria: #fbfaf7;
+    --cor-terciaria: #411e07;
+    --cor-hover: #924813;
+    --cor-hover-menu: #63d3ec;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*DETALHE: O ATALHO DO COMENTÁRIO É CNTRL + K + C*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 3% 0 0 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__clicaveis {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__clicaveis:hover {
+    color: var(--cor-hover-menu);
+    font-size: 1.54rem;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+/* 1 REM = 16px (ou seja, divide por 16 e vai dar o valor em REM) */
+.apresentacao__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.imagem {
+    width: 55%;
+}
+
+.subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.botoes__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.botoes__estilo {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 3px solid var(--cor-terciaria);
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.botoes__estilo:hover { 
+    background-color: var(--cor-hover);
+    font-size: 1.54rem;
+}
+
+.rodape__ana {
+    color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+   
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .imagem {
+        width: 70%;
+    }
+    
+}
